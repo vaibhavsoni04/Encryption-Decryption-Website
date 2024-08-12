@@ -1,0 +1,264 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    color: #ffff;
+    background-color: #111;
+}
+
+.main{
+    height: 100%;
+    width: 100%;
+    background-color: #111;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main h1{
+    font-size: 48px;
+    display: flex;
+    align-items: center;
+}
+
+.main h1 span{
+    margin: 0 15px;
+    display: flex;
+    align-items: center;
+}
+
+.main h1 span img{
+    height: 45px;
+    transition: 0.3s ease;
+}
+
+.main .enc-dec{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background: #222;
+    border-radius: 8px;
+    padding: 8px;
+    width: 25%;
+    margin: 35px 0;
+}
+
+.main .enc-dec h3{
+    font-size: 17px;
+    display: flex;
+    border-radius: 8px;
+    align-items: center;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 12px 17px;
+    transition: 0.2px ease;
+}
+
+.encBtn{
+    background-color: #333;
+}
+
+.enc-dec h3 span{
+    display: flex;
+    align-items: center;
+    margin-right: 8px;
+}
+
+.enc-dec h3 span img{
+    height: 22px;
+}
+
+.encryption{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+.encryption h5{
+    font-size: 18px;
+    font-weight: 500;
+    color: #a4a2a2;
+    margin-bottom: 13px;
+}
+
+.encryption textarea{
+    outline: none;
+    width: 100%;
+    height: 70px;
+    border: 1px solid #343434;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 17px;
+    background-color: #1c1c1c;
+    color: #ffff;
+    margin-bottom: 45px;
+    resize: vertical;
+}
+
+.encryption input{
+    outline: none;
+    width: 100%;
+    border: 1px solid #343434;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 17px;
+    background-color: #1c1c1c;
+    color: #ffff;
+    margin-bottom: 45px;
+}
+
+.encryption button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    width: 100%;
+    background-color: #1c1c1c;
+    color: #a4a2a2;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 18px;
+    border: 1px solid #343434;
+}
+
+.encryption button span{
+    display: flex;
+    margin-right: 15px;
+}
+
+.encryption button span img{
+    height: 22px;
+}
+
+.decryption{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    display: none;
+}
+
+.decryption h5{
+    font-size: 18px;
+    font-weight: 500;
+    color: #a4a2a2;
+    margin-bottom: 13px;
+}
+
+.decryption textarea{
+    outline: none;
+    width: 100%;
+    height: 70px;
+    border: 1px solid #343434;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 17px;
+    background-color: #1c1c1c;
+    color: #ffff;
+    margin-bottom: 45px;
+}
+
+.decryption input{
+    outline: none;
+    width: 100%;
+    border: 1px solid #343434;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 17px;
+    background-color: #1c1c1c;
+    color: #ffff;
+    margin-bottom: 45px;
+}
+
+.decryption button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    width: 100%;
+    background-color: #1c1c1c;
+    color: #a4a2a2;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 18px;
+    border: 1px solid #343434;
+}
+
+.decryption button span{
+    display: flex;
+    margin-right: 15px;
+}
+
+.decryption button span img{
+    height: 22px;
+}
+
+.result{
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 18px ;
+    background-color: #1c1c1c;
+    border: 1px solid #343434;
+    width: 45%;
+    margin-top: 40px;
+    display: none;
+}
+
+.clickable {
+    cursor: pointer;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+@media screen and (max-width:1024px) {
+    .main .enc-dec{
+        display: flex;
+        width: 34%;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .main .enc-dec{
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+    }
+    .encryption textarea{
+        height: 110px;
+    }
+    .decryption textarea{
+        height: 110px;
+    }
+
+    .main h1{
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width:425px) {
+    .main .enc-dec{
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+    }
+    .encryption textarea{
+        height: 130px;
+    }
+    .decryption textarea{
+        height: 130px;
+    }
+    .main h1{
+        font-size: 40px;
+    }
+
+}
